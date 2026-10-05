@@ -1,0 +1,23 @@
+{
+  "name": "edtech-invoice-delivery",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example": "node --experimental-strip-types src/run_example.ts",
+    "start": "node --experimental-strip-types src/invoice_service.ts",
+    "test": "node --experimental-strip-types --test test/invoice_workflow.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.8",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "license": "MIT"
+}
